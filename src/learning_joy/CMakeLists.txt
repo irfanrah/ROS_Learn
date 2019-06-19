@@ -202,17 +202,8 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(turtle_teleop_joy src/turtle_teleop_joy.cpp)
-add_dependencies(turtle_teleop_joy turtle_teleop_joy_pose_cpp)
-target_link_libraries(turtle_teleop_joy ${catkin_LIBRARIES})
+add_executable(turtle_teleop src/turtle_teleop_joy.cpp)
+target_link_libraries(turtle_teleop ${catkin_LIBRARIES})
 
-
-
-add_executable(listener src/listener.cpp)
-target_link_libraries(listener ${catkin_LIBRARIES})
-
-###add_executable(cobapos src/cobapos.cpp)
-###target_link_libraries(cobapos ${catkin_LIBRARIES})
-
-###add_executable(cobaposasli src/cobaposasli.cpp)
-###target_link_libraries(cobaposasli ${catkin_LIBRARIES})
+add_executable(turtle_listen src/listener.cpp)
+target_link_libraries(turtle_listen ${catkin_LIBRARIES})

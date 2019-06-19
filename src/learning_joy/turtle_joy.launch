@@ -14,10 +14,11 @@
   <param name="axis_angular" value="0" type="int"/>
   <param name="scale_linear" value="2" type="double"/>
   <param name="scale_angular" value="2" type="double"/>
-  <node pkg="learning_joy" type="turtle_teleop_joy" name="teleop"/>
+  <node pkg="learning_joy" type="turtle_teleop" name="turtle_teleop"/>
 
  <!-- Listener -->
-  <node name="pendengar" pkg="learning_joy" type="listener" output="screen" />
+  <node name="turtle_listen" pkg="learning_joy" type="turtle_listen" output="screen" />   <!-- memunculkan teks dari pendengar -->
+  <!--node name="turtle_telelis" pkg="learning_joy" type="turtle_teleop" output="screen" /-->  <!-- memunculkan teks  dari pengirim -->
 
-	
+
 </launch>

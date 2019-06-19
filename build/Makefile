@@ -285,17 +285,17 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named turtle_teleop_joy
+# Target rules for targets named turtle_teleop
 
 # Build rule for target.
-turtle_teleop_joy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 turtle_teleop_joy
-.PHONY : turtle_teleop_joy
+turtle_teleop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_teleop
+.PHONY : turtle_teleop
 
 # fast build rule for target.
-turtle_teleop_joy/fast:
-	$(MAKE) -f learning_joy/CMakeFiles/turtle_teleop_joy.dir/build.make learning_joy/CMakeFiles/turtle_teleop_joy.dir/build
-.PHONY : turtle_teleop_joy/fast
+turtle_teleop/fast:
+	$(MAKE) -f learning_joy/CMakeFiles/turtle_teleop.dir/build.make learning_joy/CMakeFiles/turtle_teleop.dir/build
+.PHONY : turtle_teleop/fast
 
 #=============================================================================
 # Target rules for targets named std_srvs_generate_messages_py
@@ -506,19 +506,6 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named listener
-
-# Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
-
-# fast build rule for target.
-listener/fast:
-	$(MAKE) -f learning_joy/CMakeFiles/listener.dir/build.make learning_joy/CMakeFiles/listener.dir/build
-.PHONY : listener/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -727,6 +714,19 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named turtle_listen
+
+# Build rule for target.
+turtle_listen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_listen
+.PHONY : turtle_listen
+
+# fast build rule for target.
+turtle_listen/fast:
+	$(MAKE) -f learning_joy/CMakeFiles/turtle_listen.dir/build.make learning_joy/CMakeFiles/turtle_listen.dir/build
+.PHONY : turtle_listen/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -852,7 +852,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... turtle_teleop_joy"
+	@echo "... turtle_teleop"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_lisp"
@@ -869,7 +869,6 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... listener"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -886,6 +885,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... turtle_listen"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... turtlesim_generate_messages_cpp"
