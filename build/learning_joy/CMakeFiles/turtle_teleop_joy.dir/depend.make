@@ -62,6 +62,8 @@ learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/
 learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
 learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/ros/melodic/include/sensor_msgs/Joy.h
 learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
+learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/ros/melodic/include/std_msgs/String.h
+learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/ros/melodic/include/turtlesim/Pose.h
 learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 learning_joy/CMakeFiles/turtle_teleop_joy.dir/src/turtle_teleop_joy.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 

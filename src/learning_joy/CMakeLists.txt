@@ -11,7 +11,11 @@ find_package(catkin REQUIRED COMPONENTS
   joy
   roscpp
   turtlesim
+  std_msgs
 )
+
+
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -104,8 +108,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES learning_joy
-#  CATKIN_DEPENDS joy roscpp turtlesim
+#  LIBRARIES beginner_tutorials
+
 #  DEPENDS system_lib
 )
 
@@ -199,4 +203,16 @@ include_directories(
 # catkin_add_nosetests(test)
 
 add_executable(turtle_teleop_joy src/turtle_teleop_joy.cpp)
+add_dependencies(turtle_teleop_joy turtle_teleop_joy_pose_cpp)
 target_link_libraries(turtle_teleop_joy ${catkin_LIBRARIES})
+
+
+
+add_executable(listener src/listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
+
+###add_executable(cobapos src/cobapos.cpp)
+###target_link_libraries(cobapos ${catkin_LIBRARIES})
+
+###add_executable(cobaposasli src/cobaposasli.cpp)
+###target_link_libraries(cobaposasli ${catkin_LIBRARIES})
