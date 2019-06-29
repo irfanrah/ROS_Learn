@@ -1,0 +1,7 @@
+<launch>
+
+ <!-- Listener -->
+  <node name="turtle_listen" pkg="learning_joy" type="turtle_listen" output="screen" />   <!-- memunculkan teks dari pendengar -->
+
+
+</launch>

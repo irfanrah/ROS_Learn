@@ -1,0 +1,8 @@
+prefix=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel
+
+Name: mobilku
+Description: Description of mobilku
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel/lib 
+Requires: roscpp gazebo_ros

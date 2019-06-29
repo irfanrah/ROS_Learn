@@ -202,8 +202,13 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+add_executable(joygazeb src/joy_gazebo.cpp)
+target_link_libraries(joygazeb ${catkin_LIBRARIES})
+
 add_executable(turtle_teleop src/turtle_teleop_joy.cpp)
 target_link_libraries(turtle_teleop ${catkin_LIBRARIES})
 
 add_executable(turtle_listen src/listener.cpp)
 target_link_libraries(turtle_listen ${catkin_LIBRARIES})
+
+

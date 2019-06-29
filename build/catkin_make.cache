@@ -1,2 +1,2 @@
-learning_joy
+learning_joy:mobilku:ros_joystick_reading_data:set_speed_joint_cpp
 -DCATKIN_DEVEL_PREFIX=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel -DCMAKE_INSTALL_PREFIX=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/install -G Unix Makefiles

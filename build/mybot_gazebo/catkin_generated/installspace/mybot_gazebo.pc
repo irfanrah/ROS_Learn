@@ -1,0 +1,8 @@
+prefix=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/install
+
+Name: mybot_gazebo
+Description: Description of mybot_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/install/lib 
+Requires: 

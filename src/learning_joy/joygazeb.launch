@@ -1,0 +1,14 @@
+<!--Example of run: 
+
+roslaunch joygazeb.launch joystick_device_id:=js1
+-->
+
+<launch>
+<arg name="joystick_device_id" default="js1" />
+ <!-- joy node -->
+  <node respawn="true" pkg="joy" type="joy_node" name="joystick_publisher" >
+    <param name="dev" type="string" value="/dev/input/$(arg joystick_device_id)" />
+  </node>
+
+  <node pkg="learning_joy" type="joygazeb" name="joygazeb" output="screen"/>
+</launch>

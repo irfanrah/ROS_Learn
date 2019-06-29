@@ -1,0 +1,8 @@
+prefix=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel
+
+Name: ros_joystick_reading_data
+Description: Description of ros_joystick_reading_data
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel/lib 
+Requires: 

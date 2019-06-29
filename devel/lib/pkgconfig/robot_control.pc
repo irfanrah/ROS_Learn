@@ -1,0 +1,8 @@
+prefix=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel
+
+Name: robot_control
+Description: Description of robot_control
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel/lib 
+Requires: ackermann_msgs

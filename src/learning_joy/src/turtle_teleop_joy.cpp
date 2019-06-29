@@ -13,8 +13,8 @@ class TeleopTurtle
  {
 public:
 	TeleopTurtle();
-private:
 	void joyCallback(const sensor_msgs::Joy::ConstPtr& joy);
+private:
 	ros::NodeHandle nh_;
 	int linear_, angular_;
 	double l_scale_, a_scale_;
@@ -42,6 +42,7 @@ joy_sub_ = nh_.subscribe<sensor_msgs::Joy>("joy", 10, &TeleopTurtle::joyCallback
 
 
 }
+
 
    void TeleopTurtle::joyCallback(const sensor_msgs::Joy::ConstPtr& joy)
  {

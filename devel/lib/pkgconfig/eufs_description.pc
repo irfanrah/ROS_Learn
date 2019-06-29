@@ -1,0 +1,8 @@
+prefix=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel
+
+Name: eufs_description
+Description: Description of eufs_description
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/devel/lib 
+Requires: 

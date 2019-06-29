@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find mobilku)/launch/world.launch" />
+	<include file="$(find mobilku)/launch/spawn2.launch" />
+	
+</launch>

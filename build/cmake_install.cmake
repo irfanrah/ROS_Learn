@@ -131,6 +131,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/build/gtest/cmake_install.cmake")
+  include("/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/build/ros_joystick_reading_data/cmake_install.cmake")
+  include("/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/build/mobilku/cmake_install.cmake")
+  include("/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/build/set_speed_joint_cpp/cmake_install.cmake")
   include("/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/build/learning_joy/cmake_install.cmake")
 
 endif()

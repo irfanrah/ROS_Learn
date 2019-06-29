@@ -5,4 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("ros_joystick_reading_data")
+subdirs("mobilku")
+subdirs("set_speed_joint_cpp")
 subdirs("learning_joy")

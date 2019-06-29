@@ -1,0 +1,8 @@
+prefix=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/install
+
+Name: mybot_description
+Description: Description of mybot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/install/lib 
+Requires: 

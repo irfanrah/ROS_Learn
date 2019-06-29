@@ -1,0 +1,8 @@
+prefix=/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/install
+
+Name: set_speed_joint_cpp
+Description: Description of set_speed_joint_cpp
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/irfanrah/Desktop/pojek/BelajarROS/TutorialROS/install/lib 
+Requires: roscpp gazebo_ros
