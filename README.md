@@ -1,10 +1,41 @@
-# mybot_ws
-URDF model for Gazebo integrated with ROS
+…or create a new repository on the command line
 
-This repository has several branches. Please checkout the appropriate branch for your needs. <br>
-1) <strong>base</strong> - create simple URDF model <br>
-2) <strong>base_sensors</strong> - add sensors to robot <br>
-3) <strong>navigation</strong> - enable autonomous navigation
+git init
+git add --all
+git commit -m "first commit"
+git push -u origin master --force
 
-For more information on running the code:  <br>
-http://moorerobots.com/blog/post/6
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/irfanrah/Test.git
+git push -u origin master
+
+ea
+
+For Launch
+
+1. Turtlesim with joystick
+roslaunch learning_joy turtle_joy.launch
+
+2.listener dari topic 
+roslaunch learning_joy listener.launch
+
+3. Reading Joystick Data to terminal
+roslaunch ros_joystick_reading_data joystick_reading_data.launch
+(optional) listener roslaunch learning_joy listener.launch
+
+4.Gazebo without joystick 
+roslaunch mobilku start.launch
+  (if mobilku model not appear killall gzclient and killall gzserver)
+
+rostopic pub /simple_robot/right_wheel_speed std_msgs/Float32 "data: 1" (from package set_speed_joint)
+rostopic pub /simple_robot/left_wheel_speed std_msgs/Float32 "data: 1" (from package set_speed_joint)
+
+5.Gazebo withjoystick 
+roslaunch mobilku start.launch
+  (if mobilku model not appear killall gzclient and killall gzserver)
+roslaunch learning_joy joygazeb.launch
+
+
+
+
